@@ -15,7 +15,8 @@ public class Ej2 {
 		String cadena2;
 
 		// Creo la variable resultado de tipo entero para almacenar el resultado
-		// que devuelva la función.
+		// que devuelva la función compareTo.
+		
 		int resultado;
 
 		// Creo el Scanner para ingreso de datos por teclado
@@ -32,8 +33,7 @@ public class Ej2 {
 		// Hago uso de la función compareTo
 		resultado = cadena1.compareTo(cadena2);
 
-		// Evaluo las cadenas y de acuerdo a ello devuelvo el mensaje
-		
+		// Evaluo las cadenas y de acuerdo a ello devuelvo el mensaje		
 		if (resultado < 0) {
 			System.out.println("La contraseña en menor alfabeticamente.");
 		} else if (resultado > 0) {

@@ -13,9 +13,7 @@ public class Ej2A {
 		// contraseña.
 		String cadena2;
 
-		// Creo la variable resultado de tipo entero para almacenar el resultado
-		// que devuelva la función.
-		int resultado;
+		
 
 		// Creo el Scanner para ingreso de datos por teclado
 		Scanner sc = new Scanner(System.in);
