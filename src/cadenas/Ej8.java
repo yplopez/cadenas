@@ -2,7 +2,12 @@ package cadenas;
 
 import java.util.Scanner;
 
+/**
+ * Programa que recibe una frase  o palabra y analiza si es palíndroma.
+ */
+
 public class Ej8 {
+	
 
 	public static void main(String[] args) {
 		//Creo la variable frase de tipo String para almacenar una frase

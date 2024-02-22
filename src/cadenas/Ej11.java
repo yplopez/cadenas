@@ -3,6 +3,11 @@ package cadenas;
 import java.util.Scanner;
 
 public class Ej11 {
+	
+	/**
+	 * Programa que se encarga de codificar un mensaje o palabra.
+	 * @param args
+	 */
 
 	public static void main(String[] args) {
 		// Creo la primera cadena de caracteres de donde se tomará la posición de la
@@ -46,6 +51,9 @@ public class Ej11 {
 		}
 		// Muestro por consola el mensaje codificado.
 		System.out.print("La palabra decodificada es: " + decodificada);
+		
+		//Cierro el Scanner
+		sc.close();
 
 	}
 

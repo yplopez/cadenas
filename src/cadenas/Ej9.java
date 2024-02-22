@@ -1,6 +1,9 @@
 package cadenas;
 
 import java.util.Scanner;
+/**
+ * Programa que determina si una frase ingresada es del idioma Javalandia
+ */
 
 public class Ej9 {
 
@@ -44,9 +47,16 @@ public class Ej9 {
 		//Muestro el mensaje traducido por consola al usuario
 		System.out.println("El mensaje traducido dice: " + traduccion);
 		
+		//Cierro el Scanner
+		sc.close();
+		
 
 	}
-	//Creo la función compruebaMensaje de tipo booleano que retorna un resultado de tipo booleano
+	/**
+	 * Creo la función compruebaMensaje de tipo booleano que recibe como parámetro una: 
+	 * @param frase
+	 * @return retorna un resultado de tipo booleano
+	 */
 	public static boolean compruebaMensaje (String frase) {
 		
 		//Creo la variable lenguajava de tipo booleano para almacenar el valor retornado por
@@ -62,22 +72,25 @@ public class Ej9 {
 		if(minuscula.startsWith("javalín, javalón")|| minuscula.endsWith("javalén, len, len")) {
 			lenguaJava = true;
 		}
-		
-		System.out.println(lenguaJava);
-		
+		//Retorno el resultado de la evaluaciónrealizada por la función a donde sea invocada en el main	
 		return lenguaJava;
 	}
-	
+	/**
+	 * Metodo de tipo String que se encarga de traducir el mensaje si corresponde al idioma Javalandia
+	 * @param frase
+	 * @return la traducción del mensaje a donde sea invocada en el main.
+	 */
 	public static String traduce (String frase) {
-		
+		//Creo la variable de tipo String traduce para almacenar la traducción del mensaje.
 		String traduce="";
 		
+		//Evaluo si la frase inicia o termina con los dialectos propios de la lengua Javalandia
 		if(frase.startsWith("javalín, javalón")){
 			traduce = frase.substring(16, frase.length());
 		}else {
 			traduce = frase.substring(0, frase.length()-18);
 		}
-		
+		//Retorno el mensaje traducido a donde seainvocado en la función principal.
 		return traduce;
 	}
 

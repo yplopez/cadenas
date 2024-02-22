@@ -1,6 +1,9 @@
 package cadenas;
 
 import java.util.Scanner;
+/**
+ * Programa que se encarga de codificar un mensaje o palabra ingresada.
+ */
 
 public class Ej10 {
 
@@ -47,6 +50,9 @@ public class Ej10 {
 		// Muestro por consola el mensaje codificado.
 		System.out.print("La palabra codificada es: " + codificada);
 
+		
+		//Cierro el scanner
+		sc.close();
 	}
 
 }
